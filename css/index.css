@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-	background-color: #fff;
+	background-color: #f7f7f7;
 	color: rgba(0,0,0,1);
 }
 
@@ -15,3 +15,81 @@ body {
 /*----------------------------------------------
      Bloco-Conteudo
 ----------------------------------------------*/
+
+.bloco-conteudo__paragrafo {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+
+
+/*----------------------------------------------
+     Foto-Legenda
+----------------------------------------------*/
+
+.foto-legenda {
+	border: 10px solid #fff;
+	box-shadow: 1px 1px 5px #0000004f;
+	position: relative;
+}
+
+.foto-legenda__imagem {
+	width: 100%;
+	height: 100%;
+}
+
+.foto-legenda__legenda {
+	opacity: 0;
+	position: absolute; /* posição absoluta com relação ao pai mais proximo que possuir a posição relativa */
+	top: 0;
+	background-color:#00000080;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box; /*tamenho da caixa = tamanha da borda*/
+	transition: opacity 1s;
+}
+
+.foto-legenda:hover .foto-legenda__legenda {
+	opacity: 1;
+}
+
+
+
+/*----------------------------------------------
+     Menu
+----------------------------------------------*/
+
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff; 
+}
+
+.menu::after {
+	content: "";
+	display: block; /* pode definir altura, largura, espaçamento interno e margem */
+	clear: both;
+}
+
+.menu__lista {
+	margin: 15px 0 0 0;
+	list-style: none;
+	text-transform: uppercase;
+	float:right;
+}
+
+.menu__item {
+	display: inline-block;
+	padding: 5px;
+	margin: 0 10px;
+	color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.menu__item > a {
+	color: #000;
+}

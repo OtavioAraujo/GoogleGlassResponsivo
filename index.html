@@ -18,18 +18,32 @@
 
 			<img src="imagens/glass-oculos-preto-peq.png">
 
-			Menu Principal
-			- Home
-			- Especificações
-			- Fotos
-			- Multimídia
-			- Fale conosco
+			<nav class="menu"> <!-- menu de navegação --> 
+				<ul class="menu__lista"> <!--ol - Ordered List / ul - Unordered List-->
+					<li class="menu__item"> <!-- li - List Item-->
+						<a href="index.html">Home</a>
+					</li>
+					<li class="menu__item">
+						<a href="specs.html">Especificações</a>
+					</li>
+					<li class="menu__item">
+						<a href="fotos.html">Fotos</a>
+					</li>
+					<li class="menu__item">
+						<a href="multimidia.html">Multimídia</a>
+					</li>
+					<li class="menu__item">
+						<a href="fale-conosco.html">Fale conosco</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 
 		<!-- 
 			<br/>  = Break Row - Quebra da linha (Enter) 
 			&nbsp; = non-breaking space	- espaço sem quebra	
 		-->
+
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
@@ -50,18 +64,25 @@
 						<span> = conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza			
 					-->
 
+					<!--
+						<a> - ancora 
+						href - hypertext reference
+						terget - alvo - _blank / _self 
+
+					 -->
+
 					<div class="bloco-conteudo">
 						<h2>O que é</h2>
-						<p class="bloco-conteudo__paragrafo">O <b>Google Glass</b> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <i>Project Glass</i>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeo&shy;conferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+						<p class="bloco-conteudo__paragrafo">O <b>Google Glass</b> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="http://glass.google.com">Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeo&shy;conferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+					
+						<figure class="foto-legenda"> <!-- Imagens que fazem parte de um conteudo -->
+							<img class="foto-legenda__imagem" src="imagens/glass-quadro-homem-mulher.jpg">
+							<figcaption class="foto-legenda__legenda"> <!-- Legenda - significado semântico - mecanismos de busca - visualização do usúario -->
+								<h3>Google Glass</h3>
+								<p>Uma nova maneira de ver o mundo.</p>				
+							</figcaption>
+						</figure>
 					</div>
-
-					<figure> <!-- Imagens que fazem parte de um conteudo -->
-						<img src="imagens/glass-quadro-homem-mulher.jpg">
-						<figcaption> <!-- Legenda - significado semântico - mecanismos de busca - visualização do usúario -->
-							<h3>Google Glass</h3>
-							<p>Uma nova maneira de ver o mundo.</p>				
-						</figcaption>>
-					</figure>
 
 					<h2>Data de lançamento</h2>
 					<p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
@@ -103,7 +124,6 @@
 					</pre>
 
 				</div>
-
 				<div class="col-lg-4">
 
 					<h1>Outras Notícias</h1>
@@ -122,6 +142,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 </body>
 </html>
